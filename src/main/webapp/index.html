@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Let browser know website is optimized for mobile-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <!-- My Styles -->
+        <link href="src/css/calendar.css" rel="stylesheet">
+
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!-- Materialize CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+        <title>Honey-Week</title>
+    </head>
+
+    <body>
+        <nav style="background-color: #2c5234;">
+            <div class="nav-wrapper">
+                <img width="300" src="">
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="">INICIO</a></li>
+                    <li><a href="">EVENTOS</a></li>
+                    <li><a href="">INICIAR SESIÓN</a></li>
+                    <li><a href="">REGISTRARSE</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div>
+            <div class="row" style="height: 35%;">
+                <div class="col s1" style="position: relative; top: 10px; width: 65%;">
+                    <img src="src/img/UAEM.jpg" alt="UAEMex">
+                </div>
+                <div class="col s2">
+                    <div id="calendar" style="position: relative; top: 10px; width: 32%;"></div>
+                </div>
+            </div>
+        </div>
+        <footer class="page-footer" style="position: relative; height: 32%; background-color: #2c5234;">
+                <div class="row">
+                    <div class="col s4">
+                        <div class="container">
+                        <h5 class="white-text">Servicios</h5>
+                        <p class="grey-text text-lighten-4">Somos los encargados de la gestión de los eventos que se llevan a cabo en los centros universitarios de la máxima casa de estudios.</p>
+                        <p class="grey-text text-lighten-4">Universidad Autónoma del Estado de México</p>
+                        </div>
+                    </div>
+                    <div class="col s2">
+                        <h5 class="white-text">Categorias</h5>
+                        <ul>
+                            <li><a class="grey-text text-lighten-3" href="#!">Eventos especiales</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Semana multidisciplinaria</a></li>
+                        </ul>
+                    </div>
+                    <div class="col s2">
+                        <h5 class="white-text">Colaboradores</h5>
+                        <ul>
+                            <li><a class="grey-text text-lighten-3" href="#!">Ricardo Estrada</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Damaris Gonzáles</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Erick Guzmán</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Bryan Jiménez</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Josué Olivares</a></li>
+                        </ul>
+                    </div>
+                    <div class="col s3">
+                        <ul>
+                            <li><a href=""><img src="src/img/Google Play.png" width="260" alt="Honey-Week en Google Play Store"></a><li>
+                        </ul>
+                    </div>
+                </div>
+            <div class="footer-copyright">
+                <div class="container">© 2020 Honey-Week, Todos los derechos reservados.</div>
+            </div>
+        </footer>
+
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+        <!-- Materialize CSS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+        <!-- Calendar JQuery -->
+        <script src="src/js/jquery-ui-datepicker.min.js"></script>
+        <script>
+            //Calendar's init
+            $('#calendar').datepicker({
+                monthNames: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+                monthNamesShort: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
+                dayNames: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],
+                dayNamesShort: ['Dom', 'Lun', 'Mar', 'Mié', 'Juv', 'Vie', 'Sáb'],
+                dayNamesMin: ['Do', 'Lu', 'Ma', 'Mi', 'Ju', 'Vi', 'Sá'],
+                firstDay: 1,
+                inline: true,
+                showOtherMonths: true
+            });
+        </script>
+    </body>
+</html>
